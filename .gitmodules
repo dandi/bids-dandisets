@@ -13,3 +13,18 @@
 [submodule "bids-000007"]
 	path = bids-000007
 	url = https://github.com/bids-dandisets/000007
+[submodule "000003"]
+	path = 000003
+	url = https://github.com/bids-dandisets/000003
+[submodule "000004"]
+	path = 000004
+	url = https://github.com/bids-dandisets/000004
+[submodule "000005"]
+	path = 000005
+	url = https://github.com/bids-dandisets/000005
+[submodule "000006"]
+	path = 000006
+	url = https://github.com/bids-dandisets/000006
+[submodule "000007"]
+	path = 000007
+	url = https://github.com/bids-dandisets/000007
