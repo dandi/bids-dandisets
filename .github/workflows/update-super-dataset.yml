@@ -1,0 +1,47 @@
+name: Update Super-dataset
+
+on:
+  schedule:
+    - cron: "0 */4 * * *"  # every 4 hours
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  _GITHUB_API_KEY: ${{ secrets._GITHUB_API_KEY }}
+
+jobs:
+  UpdateSuperdataset:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.13
+
+      - name: Install packages
+        run: pip install dandi requests
+
+      - name: Run update script
+        run: python scripts/update_super_dataset.py
+
+
+  NotifyOnFailure:
+    runs-on: ubuntu-latest
+    needs: [ UpdateSuperdataset ]
+    if: ${{ always() && needs.UpdateSuperdataset.result == 'failure' }}
+    steps:
+      - uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "CI Failure: BIDS-Dandisets Update"
+          to: cody.c.baker.phd@gmail.com  # Add more with comma separation (no spaces)
+          from: bids-dandisets
+          body: "Please check the latest run of the BIDS-Dandisets generation: https://github.com/bids-dandisets/scripts/actions/workflows/update-bids-dandisets.yml"
