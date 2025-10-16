@@ -17,7 +17,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Clone repo
+        run: git clone https://x-access-token:${{ secrets._GITHUB_API_KEY }}@github.com/dandi/bids-dandisets.git
+        
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -27,7 +29,16 @@ jobs:
         run: pip install dandi requests
 
       - name: Run update script
-        run: python scripts/update_super_dataset.py
+        run: python bids-dandisets/scripts/update_super_dataset.py
+
+      - name: Upload changes
+        run: |
+          cd bids-dandisets
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit --message "update"
+          git push
 
 
   NotifyOnFailure:
