@@ -56,7 +56,7 @@ def run(limit: int | None = None) -> None:
         submodule_path = repo_directory / dandiset_id #f"bids-{dandiset_id}"
         if not submodule_path.exists():
             _deploy_subprocess(
-                command=f"git submodule add https://github.com/bids-dandisets/{dandiset_id} bids-{dandiset_id}",
+                command=f"git submodule add https://github.com/bids-dandisets/{dandiset_id} {dandiset_id}",
                 cwd=repo_directory,
             )
         else:
