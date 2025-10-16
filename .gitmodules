@@ -1,18 +1,3 @@
-[submodule "bids-000003"]
-	path = bids-000003
-	url = https://github.com/bids-dandisets/000003
-[submodule "bids-000004"]
-	path = bids-000004
-	url = https://github.com/bids-dandisets/000004
-[submodule "bids-000005"]
-	path = bids-000005
-	url = https://github.com/bids-dandisets/000005
-[submodule "bids-000006"]
-	path = bids-000006
-	url = https://github.com/bids-dandisets/000006
-[submodule "bids-000007"]
-	path = bids-000007
-	url = https://github.com/bids-dandisets/000007
 [submodule "000003"]
 	path = 000003
 	url = https://github.com/bids-dandisets/000003

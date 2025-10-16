@@ -6,7 +6,7 @@ import subprocess
 import dandi.dandiapi
 import requests
 
-LIMIT_DANDISETS = 5
+LIMIT_DANDISETS = None
 
 GITHUB_TOKEN = os.environ.get("_GITHUB_API_KEY", None)
 if GITHUB_TOKEN is None:

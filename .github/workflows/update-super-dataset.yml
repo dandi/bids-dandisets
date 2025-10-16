@@ -29,7 +29,7 @@ jobs:
         run: pip install dandi requests
 
       - name: Run update script
-        run: python bids-dandisets/scripts/update_super_dataset.py
+        run: python bids-dandisets/.github/scripts/update_super_dataset.py
 
       - name: Upload changes
         run: |
