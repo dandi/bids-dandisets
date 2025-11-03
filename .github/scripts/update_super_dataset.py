@@ -60,8 +60,14 @@ def run(limit: int | None = None) -> None:
             )
             print(f"\tCreated fresh submodule for Dandiset {dandiset_id}...")
         else:
-            #_deploy_subprocess(command="git submodule update", cwd=submodule_path)
-            _deploy_subprocess(command="git pull", cwd=submodule_path)
+            _deploy_subprocess(command=f"git submodule deinit -f {dandiset_id}", cwd=repo_directory)
+            _deploy_subprocess(command=f"git rm -f {dandiset_id}", cwd=repo_directory)
+            _deploy_subprocess(command=f"rm -rf .git/modules/{dandiset_id}", cwd=repo_directory)
+            _deploy_subprocess(
+                command=f"git submodule add https://github.com/bids-dandisets/{dandiset_id} {dandiset_id}",
+                cwd=repo_directory,
+            )
+            
             print(f"\tUpdated submodule for Dandiset {dandiset_id}...")
 
         print(f"Process complete for Dandiset {dandiset_id}!\n\n")
