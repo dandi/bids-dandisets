@@ -39,7 +39,7 @@ def run(limit: int | None = None) -> None:
 
         dandiset_id = dandiset.identifier
 
-        print(f"Creating submodule for Dandiset {dandiset_id}...")
+        print(f"Processing submodule for Dandiset {dandiset_id}...")
 
         repo_name = f"bids-dandisets/{dandiset_id}"
         repo_api_url = f"{BASE_GITHUB_API_URL}/{repo_name}"
@@ -52,15 +52,17 @@ def run(limit: int | None = None) -> None:
 
             continue
 
-        # NOTE: would not let me name '{dandiset_id}' due to conflict with dandisets/{dandiset_id}
-        submodule_path = repo_directory / dandiset_id #f"bids-{dandiset_id}"
+        submodule_path = repo_directory / dandiset_id
         if not submodule_path.exists():
             _deploy_subprocess(
                 command=f"git submodule add https://github.com/bids-dandisets/{dandiset_id} {dandiset_id}",
                 cwd=repo_directory,
             )
+            print(f"\tCreated fresh submodule for Dandiset {dandiset_id}...")
         else:
-            _deploy_subprocess(command="git submodule update", cwd=submodule_path)
+            #_deploy_subprocess(command="git submodule update", cwd=submodule_path)
+            _deploy_subprocess(command="git pull", cwd=submodule_path)
+            print(f"\Updated submodule for Dandiset {dandiset_id}...")
 
         print(f"Process complete for Dandiset {dandiset_id}!\n\n")
 
