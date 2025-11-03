@@ -66,9 +66,6 @@ def run(limit: int | None = None) -> None:
 
         print(f"Process complete for Dandiset {dandiset_id}!\n\n")
 
-    _configure_git_repo(repo_directory=repo_directory)
-    _push_changes(repo_directory=repo_directory)
-
 
 def _deploy_subprocess(
     *,
@@ -103,21 +100,8 @@ def _deploy_subprocess(
     return result.stdout
 
 
-def _configure_git_repo(repo_directory: pathlib.Path) -> None:
-    _deploy_subprocess(
-        command='git config --local user.email "github-actions[bot]@users.noreply.github.com"', cwd=repo_directory
-    )
-    _deploy_subprocess(command='git config --local user.name "github-actions[bot]"', cwd=repo_directory)
-
-
 def _update_repo(repo_directory: pathlib.Path) -> None:
     _deploy_subprocess(command="git pull", cwd=repo_directory)
-
-
-def _push_changes(repo_directory: pathlib.Path) -> None:
-    _deploy_subprocess(command="git add .", cwd=repo_directory)
-    _deploy_subprocess(command='git commit --message "update"', cwd=repo_directory, ignore_errors=True)
-    _deploy_subprocess(command="git push", cwd=repo_directory)
 
 
 if __name__ == "__main__":
