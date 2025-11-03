@@ -31,11 +31,6 @@ jobs:
       - name: Run update script
         run: python bids-dandisets/.github/scripts/update_super_dataset.py
 
-      - name: Update all
-        run: |
-          cd bids-dandisets
-          git submodule update --remote --merge
-
       - name: Upload changes
         run: |
           cd bids-dandisets
