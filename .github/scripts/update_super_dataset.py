@@ -62,7 +62,7 @@ def run(limit: int | None = None) -> None:
         else:
             #_deploy_subprocess(command="git submodule update", cwd=submodule_path)
             _deploy_subprocess(command="git pull", cwd=submodule_path)
-            print(f"\Updated submodule for Dandiset {dandiset_id}...")
+            print(f"\tUpdated submodule for Dandiset {dandiset_id}...")
 
         print(f"Process complete for Dandiset {dandiset_id}!\n\n")
 
