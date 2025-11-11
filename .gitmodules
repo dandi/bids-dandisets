@@ -2209,3 +2209,12 @@
 [submodule "001633"]
 	path = 001633
 	url = https://github.com/bids-dandisets/001633
+[submodule "001634"]
+	path = 001634
+	url = https://github.com/bids-dandisets/001634
+[submodule "001635"]
+	path = 001635
+	url = https://github.com/bids-dandisets/001635
+[submodule "001636"]
+	path = 001636
+	url = https://github.com/bids-dandisets/001636
