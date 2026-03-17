@@ -865,453 +865,9 @@
 [submodule "001686"]
 	path = 001686
 	url = https://github.com/bids-dandisets/001686
-[submodule "000483"]
-	path = 000483
-	url = https://github.com/bids-dandisets/000483
-[submodule "000485"]
-	path = 000485
-	url = https://github.com/bids-dandisets/000485
-[submodule "000486"]
-	path = 000486
-	url = https://github.com/bids-dandisets/000486
-[submodule "000488"]
-	path = 000488
-	url = https://github.com/bids-dandisets/000488
-[submodule "000489"]
-	path = 000489
-	url = https://github.com/bids-dandisets/000489
-[submodule "000491"]
-	path = 000491
-	url = https://github.com/bids-dandisets/000491
-[submodule "000529"]
-	path = 000529
-	url = https://github.com/bids-dandisets/000529
-[submodule "000535"]
-	path = 000535
-	url = https://github.com/bids-dandisets/000535
 [submodule "000537"]
 	path = 000537
 	url = https://github.com/bids-dandisets/000537
-[submodule "000538"]
-	path = 000538
-	url = https://github.com/bids-dandisets/000538
-[submodule "000540"]
-	path = 000540
-	url = https://github.com/bids-dandisets/000540
-[submodule "000541"]
-	path = 000541
-	url = https://github.com/bids-dandisets/000541
-[submodule "000544"]
-	path = 000544
-	url = https://github.com/bids-dandisets/000544
-[submodule "000545"]
-	path = 000545
-	url = https://github.com/bids-dandisets/000545
-[submodule "000546"]
-	path = 000546
-	url = https://github.com/bids-dandisets/000546
-[submodule "000547"]
-	path = 000547
-	url = https://github.com/bids-dandisets/000547
-[submodule "000548"]
-	path = 000548
-	url = https://github.com/bids-dandisets/000548
-[submodule "000549"]
-	path = 000549
-	url = https://github.com/bids-dandisets/000549
-[submodule "000550"]
-	path = 000550
-	url = https://github.com/bids-dandisets/000550
-[submodule "000552"]
-	path = 000552
-	url = https://github.com/bids-dandisets/000552
-[submodule "000554"]
-	path = 000554
-	url = https://github.com/bids-dandisets/000554
-[submodule "000559"]
-	path = 000559
-	url = https://github.com/bids-dandisets/000559
-[submodule "000563"]
-	path = 000563
-	url = https://github.com/bids-dandisets/000563
-[submodule "000565"]
-	path = 000565
-	url = https://github.com/bids-dandisets/000565
-[submodule "000566"]
-	path = 000566
-	url = https://github.com/bids-dandisets/000566
-[submodule "000568"]
-	path = 000568
-	url = https://github.com/bids-dandisets/000568
-[submodule "000569"]
-	path = 000569
-	url = https://github.com/bids-dandisets/000569
-[submodule "000570"]
-	path = 000570
-	url = https://github.com/bids-dandisets/000570
-[submodule "000572"]
-	path = 000572
-	url = https://github.com/bids-dandisets/000572
-[submodule "000574"]
-	path = 000574
-	url = https://github.com/bids-dandisets/000574
-[submodule "000575"]
-	path = 000575
-	url = https://github.com/bids-dandisets/000575
-[submodule "000576"]
-	path = 000576
-	url = https://github.com/bids-dandisets/000576
-[submodule "000579"]
-	path = 000579
-	url = https://github.com/bids-dandisets/000579
-[submodule "000582"]
-	path = 000582
-	url = https://github.com/bids-dandisets/000582
-[submodule "000615"]
-	path = 000615
-	url = https://github.com/bids-dandisets/000615
-[submodule "000617"]
-	path = 000617
-	url = https://github.com/bids-dandisets/000617
-[submodule "000618"]
-	path = 000618
-	url = https://github.com/bids-dandisets/000618
-[submodule "000620"]
-	path = 000620
-	url = https://github.com/bids-dandisets/000620
-[submodule "000623"]
-	path = 000623
-	url = https://github.com/bids-dandisets/000623
-[submodule "000624"]
-	path = 000624
-	url = https://github.com/bids-dandisets/000624
-[submodule "000625"]
-	path = 000625
-	url = https://github.com/bids-dandisets/000625
-[submodule "000626"]
-	path = 000626
-	url = https://github.com/bids-dandisets/000626
-[submodule "000628"]
-	path = 000628
-	url = https://github.com/bids-dandisets/000628
-[submodule "000629"]
-	path = 000629
-	url = https://github.com/bids-dandisets/000629
-[submodule "000630"]
-	path = 000630
-	url = https://github.com/bids-dandisets/000630
-[submodule "000631"]
-	path = 000631
-	url = https://github.com/bids-dandisets/000631
-[submodule "000632"]
-	path = 000632
-	url = https://github.com/bids-dandisets/000632
-[submodule "000633"]
-	path = 000633
-	url = https://github.com/bids-dandisets/000633
-[submodule "000634"]
-	path = 000634
-	url = https://github.com/bids-dandisets/000634
-[submodule "000635"]
-	path = 000635
-	url = https://github.com/bids-dandisets/000635
-[submodule "000636"]
-	path = 000636
-	url = https://github.com/bids-dandisets/000636
-[submodule "000637"]
-	path = 000637
-	url = https://github.com/bids-dandisets/000637
-[submodule "000638"]
-	path = 000638
-	url = https://github.com/bids-dandisets/000638
-[submodule "000640"]
-	path = 000640
-	url = https://github.com/bids-dandisets/000640
-[submodule "000673"]
-	path = 000673
-	url = https://github.com/bids-dandisets/000673
-[submodule "000678"]
-	path = 000678
-	url = https://github.com/bids-dandisets/000678
-[submodule "000683"]
-	path = 000683
-	url = https://github.com/bids-dandisets/000683
-[submodule "000686"]
-	path = 000686
-	url = https://github.com/bids-dandisets/000686
-[submodule "000687"]
-	path = 000687
-	url = https://github.com/bids-dandisets/000687
-[submodule "000688"]
-	path = 000688
-	url = https://github.com/bids-dandisets/000688
-[submodule "000689"]
-	path = 000689
-	url = https://github.com/bids-dandisets/000689
-[submodule "000690"]
-	path = 000690
-	url = https://github.com/bids-dandisets/000690
-[submodule "000691"]
-	path = 000691
-	url = https://github.com/bids-dandisets/000691
-[submodule "000692"]
-	path = 000692
-	url = https://github.com/bids-dandisets/000692
-[submodule "000696"]
-	path = 000696
-	url = https://github.com/bids-dandisets/000696
-[submodule "000697"]
-	path = 000697
-	url = https://github.com/bids-dandisets/000697
-[submodule "000698"]
-	path = 000698
-	url = https://github.com/bids-dandisets/000698
-[submodule "000699"]
-	path = 000699
-	url = https://github.com/bids-dandisets/000699
-[submodule "000700"]
-	path = 000700
-	url = https://github.com/bids-dandisets/000700
-[submodule "000701"]
-	path = 000701
-	url = https://github.com/bids-dandisets/000701
-[submodule "000702"]
-	path = 000702
-	url = https://github.com/bids-dandisets/000702
-[submodule "000703"]
-	path = 000703
-	url = https://github.com/bids-dandisets/000703
-[submodule "000704"]
-	path = 000704
-	url = https://github.com/bids-dandisets/000704
-[submodule "000705"]
-	path = 000705
-	url = https://github.com/bids-dandisets/000705
-[submodule "000706"]
-	path = 000706
-	url = https://github.com/bids-dandisets/000706
-[submodule "000707"]
-	path = 000707
-	url = https://github.com/bids-dandisets/000707
-[submodule "000708"]
-	path = 000708
-	url = https://github.com/bids-dandisets/000708
-[submodule "000710"]
-	path = 000710
-	url = https://github.com/bids-dandisets/000710
-[submodule "000711"]
-	path = 000711
-	url = https://github.com/bids-dandisets/000711
-[submodule "000713"]
-	path = 000713
-	url = https://github.com/bids-dandisets/000713
-[submodule "000714"]
-	path = 000714
-	url = https://github.com/bids-dandisets/000714
-[submodule "000715"]
-	path = 000715
-	url = https://github.com/bids-dandisets/000715
-[submodule "000717"]
-	path = 000717
-	url = https://github.com/bids-dandisets/000717
-[submodule "000718"]
-	path = 000718
-	url = https://github.com/bids-dandisets/000718
-[submodule "000723"]
-	path = 000723
-	url = https://github.com/bids-dandisets/000723
-[submodule "000727"]
-	path = 000727
-	url = https://github.com/bids-dandisets/000727
-[submodule "000728"]
-	path = 000728
-	url = https://github.com/bids-dandisets/000728
-[submodule "000766"]
-	path = 000766
-	url = https://github.com/bids-dandisets/000766
-[submodule "000768"]
-	path = 000768
-	url = https://github.com/bids-dandisets/000768
-[submodule "000769"]
-	path = 000769
-	url = https://github.com/bids-dandisets/000769
-[submodule "000773"]
-	path = 000773
-	url = https://github.com/bids-dandisets/000773
-[submodule "000774"]
-	path = 000774
-	url = https://github.com/bids-dandisets/000774
-[submodule "000776"]
-	path = 000776
-	url = https://github.com/bids-dandisets/000776
-[submodule "000871"]
-	path = 000871
-	url = https://github.com/bids-dandisets/000871
-[submodule "000875"]
-	path = 000875
-	url = https://github.com/bids-dandisets/000875
-[submodule "000876"]
-	path = 000876
-	url = https://github.com/bids-dandisets/000876
-[submodule "000888"]
-	path = 000888
-	url = https://github.com/bids-dandisets/000888
-[submodule "000889"]
-	path = 000889
-	url = https://github.com/bids-dandisets/000889
-[submodule "000891"]
-	path = 000891
-	url = https://github.com/bids-dandisets/000891
-[submodule "000894"]
-	path = 000894
-	url = https://github.com/bids-dandisets/000894
-[submodule "000897"]
-	path = 000897
-	url = https://github.com/bids-dandisets/000897
-[submodule "000931"]
-	path = 000931
-	url = https://github.com/bids-dandisets/000931
-[submodule "000932"]
-	path = 000932
-	url = https://github.com/bids-dandisets/000932
-[submodule "000933"]
-	path = 000933
-	url = https://github.com/bids-dandisets/000933
-[submodule "000934"]
-	path = 000934
-	url = https://github.com/bids-dandisets/000934
-[submodule "000935"]
-	path = 000935
-	url = https://github.com/bids-dandisets/000935
-[submodule "000938"]
-	path = 000938
-	url = https://github.com/bids-dandisets/000938
-[submodule "000939"]
-	path = 000939
-	url = https://github.com/bids-dandisets/000939
-[submodule "000940"]
-	path = 000940
-	url = https://github.com/bids-dandisets/000940
-[submodule "000941"]
-	path = 000941
-	url = https://github.com/bids-dandisets/000941
-[submodule "000943"]
-	path = 000943
-	url = https://github.com/bids-dandisets/000943
-[submodule "000945"]
-	path = 000945
-	url = https://github.com/bids-dandisets/000945
-[submodule "000946"]
-	path = 000946
-	url = https://github.com/bids-dandisets/000946
-[submodule "000947"]
-	path = 000947
-	url = https://github.com/bids-dandisets/000947
-[submodule "000950"]
-	path = 000950
-	url = https://github.com/bids-dandisets/000950
-[submodule "000951"]
-	path = 000951
-	url = https://github.com/bids-dandisets/000951
-[submodule "000952"]
-	path = 000952
-	url = https://github.com/bids-dandisets/000952
-[submodule "000953"]
-	path = 000953
-	url = https://github.com/bids-dandisets/000953
-[submodule "000954"]
-	path = 000954
-	url = https://github.com/bids-dandisets/000954
-[submodule "000955"]
-	path = 000955
-	url = https://github.com/bids-dandisets/000955
-[submodule "000957"]
-	path = 000957
-	url = https://github.com/bids-dandisets/000957
-[submodule "000970"]
-	path = 000970
-	url = https://github.com/bids-dandisets/000970
-[submodule "000971"]
-	path = 000971
-	url = https://github.com/bids-dandisets/000971
-[submodule "000978"]
-	path = 000978
-	url = https://github.com/bids-dandisets/000978
-[submodule "000981"]
-	path = 000981
-	url = https://github.com/bids-dandisets/000981
-[submodule "000983"]
-	path = 000983
-	url = https://github.com/bids-dandisets/000983
-[submodule "000986"]
-	path = 000986
-	url = https://github.com/bids-dandisets/000986
-[submodule "000987"]
-	path = 000987
-	url = https://github.com/bids-dandisets/000987
-[submodule "000988"]
-	path = 000988
-	url = https://github.com/bids-dandisets/000988
-[submodule "000989"]
-	path = 000989
-	url = https://github.com/bids-dandisets/000989
-[submodule "001025"]
-	path = 001025
-	url = https://github.com/bids-dandisets/001025
-[submodule "001027"]
-	path = 001027
-	url = https://github.com/bids-dandisets/001027
-[submodule "001028"]
-	path = 001028
-	url = https://github.com/bids-dandisets/001028
-[submodule "001029"]
-	path = 001029
-	url = https://github.com/bids-dandisets/001029
-[submodule "001030"]
-	path = 001030
-	url = https://github.com/bids-dandisets/001030
-[submodule "001031"]
-	path = 001031
-	url = https://github.com/bids-dandisets/001031
-[submodule "001032"]
-	path = 001032
-	url = https://github.com/bids-dandisets/001032
-[submodule "001033"]
-	path = 001033
-	url = https://github.com/bids-dandisets/001033
-[submodule "001034"]
-	path = 001034
-	url = https://github.com/bids-dandisets/001034
-[submodule "001035"]
-	path = 001035
-	url = https://github.com/bids-dandisets/001035
-[submodule "001037"]
-	path = 001037
-	url = https://github.com/bids-dandisets/001037
-[submodule "001038"]
-	path = 001038
-	url = https://github.com/bids-dandisets/001038
-[submodule "001044"]
-	path = 001044
-	url = https://github.com/bids-dandisets/001044
-[submodule "001045"]
-	path = 001045
-	url = https://github.com/bids-dandisets/001045
-[submodule "001046"]
-	path = 001046
-	url = https://github.com/bids-dandisets/001046
-[submodule "001047"]
-	path = 001047
-	url = https://github.com/bids-dandisets/001047
-[submodule "001048"]
-	path = 001048
-	url = https://github.com/bids-dandisets/001048
-[submodule "001051"]
-	path = 001051
-	url = https://github.com/bids-dandisets/001051
-[submodule "001052"]
-	path = 001052
-	url = https://github.com/bids-dandisets/001052
 [submodule "001054"]
 	path = 001054
 	url = https://github.com/bids-dandisets/001054
@@ -2335,3 +1891,447 @@
 [submodule "000482"]
 	path = 000482
 	url = https://github.com/bids-dandisets/000482
+[submodule "000483"]
+	path = 000483
+	url = https://github.com/bids-dandisets/000483
+[submodule "000485"]
+	path = 000485
+	url = https://github.com/bids-dandisets/000485
+[submodule "000486"]
+	path = 000486
+	url = https://github.com/bids-dandisets/000486
+[submodule "000488"]
+	path = 000488
+	url = https://github.com/bids-dandisets/000488
+[submodule "000489"]
+	path = 000489
+	url = https://github.com/bids-dandisets/000489
+[submodule "000491"]
+	path = 000491
+	url = https://github.com/bids-dandisets/000491
+[submodule "000529"]
+	path = 000529
+	url = https://github.com/bids-dandisets/000529
+[submodule "000535"]
+	path = 000535
+	url = https://github.com/bids-dandisets/000535
+[submodule "000538"]
+	path = 000538
+	url = https://github.com/bids-dandisets/000538
+[submodule "000540"]
+	path = 000540
+	url = https://github.com/bids-dandisets/000540
+[submodule "000541"]
+	path = 000541
+	url = https://github.com/bids-dandisets/000541
+[submodule "000544"]
+	path = 000544
+	url = https://github.com/bids-dandisets/000544
+[submodule "000545"]
+	path = 000545
+	url = https://github.com/bids-dandisets/000545
+[submodule "000546"]
+	path = 000546
+	url = https://github.com/bids-dandisets/000546
+[submodule "000547"]
+	path = 000547
+	url = https://github.com/bids-dandisets/000547
+[submodule "000548"]
+	path = 000548
+	url = https://github.com/bids-dandisets/000548
+[submodule "000549"]
+	path = 000549
+	url = https://github.com/bids-dandisets/000549
+[submodule "000550"]
+	path = 000550
+	url = https://github.com/bids-dandisets/000550
+[submodule "000552"]
+	path = 000552
+	url = https://github.com/bids-dandisets/000552
+[submodule "000554"]
+	path = 000554
+	url = https://github.com/bids-dandisets/000554
+[submodule "000559"]
+	path = 000559
+	url = https://github.com/bids-dandisets/000559
+[submodule "000563"]
+	path = 000563
+	url = https://github.com/bids-dandisets/000563
+[submodule "000565"]
+	path = 000565
+	url = https://github.com/bids-dandisets/000565
+[submodule "000566"]
+	path = 000566
+	url = https://github.com/bids-dandisets/000566
+[submodule "000568"]
+	path = 000568
+	url = https://github.com/bids-dandisets/000568
+[submodule "000569"]
+	path = 000569
+	url = https://github.com/bids-dandisets/000569
+[submodule "000570"]
+	path = 000570
+	url = https://github.com/bids-dandisets/000570
+[submodule "000572"]
+	path = 000572
+	url = https://github.com/bids-dandisets/000572
+[submodule "000574"]
+	path = 000574
+	url = https://github.com/bids-dandisets/000574
+[submodule "000575"]
+	path = 000575
+	url = https://github.com/bids-dandisets/000575
+[submodule "000576"]
+	path = 000576
+	url = https://github.com/bids-dandisets/000576
+[submodule "000579"]
+	path = 000579
+	url = https://github.com/bids-dandisets/000579
+[submodule "000582"]
+	path = 000582
+	url = https://github.com/bids-dandisets/000582
+[submodule "000615"]
+	path = 000615
+	url = https://github.com/bids-dandisets/000615
+[submodule "000617"]
+	path = 000617
+	url = https://github.com/bids-dandisets/000617
+[submodule "000618"]
+	path = 000618
+	url = https://github.com/bids-dandisets/000618
+[submodule "000620"]
+	path = 000620
+	url = https://github.com/bids-dandisets/000620
+[submodule "000623"]
+	path = 000623
+	url = https://github.com/bids-dandisets/000623
+[submodule "000624"]
+	path = 000624
+	url = https://github.com/bids-dandisets/000624
+[submodule "000625"]
+	path = 000625
+	url = https://github.com/bids-dandisets/000625
+[submodule "000626"]
+	path = 000626
+	url = https://github.com/bids-dandisets/000626
+[submodule "000628"]
+	path = 000628
+	url = https://github.com/bids-dandisets/000628
+[submodule "000629"]
+	path = 000629
+	url = https://github.com/bids-dandisets/000629
+[submodule "000630"]
+	path = 000630
+	url = https://github.com/bids-dandisets/000630
+[submodule "000631"]
+	path = 000631
+	url = https://github.com/bids-dandisets/000631
+[submodule "000632"]
+	path = 000632
+	url = https://github.com/bids-dandisets/000632
+[submodule "000633"]
+	path = 000633
+	url = https://github.com/bids-dandisets/000633
+[submodule "000634"]
+	path = 000634
+	url = https://github.com/bids-dandisets/000634
+[submodule "000635"]
+	path = 000635
+	url = https://github.com/bids-dandisets/000635
+[submodule "000636"]
+	path = 000636
+	url = https://github.com/bids-dandisets/000636
+[submodule "000637"]
+	path = 000637
+	url = https://github.com/bids-dandisets/000637
+[submodule "000638"]
+	path = 000638
+	url = https://github.com/bids-dandisets/000638
+[submodule "000640"]
+	path = 000640
+	url = https://github.com/bids-dandisets/000640
+[submodule "000673"]
+	path = 000673
+	url = https://github.com/bids-dandisets/000673
+[submodule "000678"]
+	path = 000678
+	url = https://github.com/bids-dandisets/000678
+[submodule "000683"]
+	path = 000683
+	url = https://github.com/bids-dandisets/000683
+[submodule "000686"]
+	path = 000686
+	url = https://github.com/bids-dandisets/000686
+[submodule "000687"]
+	path = 000687
+	url = https://github.com/bids-dandisets/000687
+[submodule "000688"]
+	path = 000688
+	url = https://github.com/bids-dandisets/000688
+[submodule "000689"]
+	path = 000689
+	url = https://github.com/bids-dandisets/000689
+[submodule "000690"]
+	path = 000690
+	url = https://github.com/bids-dandisets/000690
+[submodule "000691"]
+	path = 000691
+	url = https://github.com/bids-dandisets/000691
+[submodule "000692"]
+	path = 000692
+	url = https://github.com/bids-dandisets/000692
+[submodule "000696"]
+	path = 000696
+	url = https://github.com/bids-dandisets/000696
+[submodule "000697"]
+	path = 000697
+	url = https://github.com/bids-dandisets/000697
+[submodule "000698"]
+	path = 000698
+	url = https://github.com/bids-dandisets/000698
+[submodule "000699"]
+	path = 000699
+	url = https://github.com/bids-dandisets/000699
+[submodule "000700"]
+	path = 000700
+	url = https://github.com/bids-dandisets/000700
+[submodule "000701"]
+	path = 000701
+	url = https://github.com/bids-dandisets/000701
+[submodule "000702"]
+	path = 000702
+	url = https://github.com/bids-dandisets/000702
+[submodule "000703"]
+	path = 000703
+	url = https://github.com/bids-dandisets/000703
+[submodule "000704"]
+	path = 000704
+	url = https://github.com/bids-dandisets/000704
+[submodule "000705"]
+	path = 000705
+	url = https://github.com/bids-dandisets/000705
+[submodule "000706"]
+	path = 000706
+	url = https://github.com/bids-dandisets/000706
+[submodule "000707"]
+	path = 000707
+	url = https://github.com/bids-dandisets/000707
+[submodule "000708"]
+	path = 000708
+	url = https://github.com/bids-dandisets/000708
+[submodule "000710"]
+	path = 000710
+	url = https://github.com/bids-dandisets/000710
+[submodule "000711"]
+	path = 000711
+	url = https://github.com/bids-dandisets/000711
+[submodule "000713"]
+	path = 000713
+	url = https://github.com/bids-dandisets/000713
+[submodule "000714"]
+	path = 000714
+	url = https://github.com/bids-dandisets/000714
+[submodule "000715"]
+	path = 000715
+	url = https://github.com/bids-dandisets/000715
+[submodule "000717"]
+	path = 000717
+	url = https://github.com/bids-dandisets/000717
+[submodule "000718"]
+	path = 000718
+	url = https://github.com/bids-dandisets/000718
+[submodule "000723"]
+	path = 000723
+	url = https://github.com/bids-dandisets/000723
+[submodule "000727"]
+	path = 000727
+	url = https://github.com/bids-dandisets/000727
+[submodule "000728"]
+	path = 000728
+	url = https://github.com/bids-dandisets/000728
+[submodule "000766"]
+	path = 000766
+	url = https://github.com/bids-dandisets/000766
+[submodule "000768"]
+	path = 000768
+	url = https://github.com/bids-dandisets/000768
+[submodule "000769"]
+	path = 000769
+	url = https://github.com/bids-dandisets/000769
+[submodule "000773"]
+	path = 000773
+	url = https://github.com/bids-dandisets/000773
+[submodule "000774"]
+	path = 000774
+	url = https://github.com/bids-dandisets/000774
+[submodule "000776"]
+	path = 000776
+	url = https://github.com/bids-dandisets/000776
+[submodule "000871"]
+	path = 000871
+	url = https://github.com/bids-dandisets/000871
+[submodule "000875"]
+	path = 000875
+	url = https://github.com/bids-dandisets/000875
+[submodule "000876"]
+	path = 000876
+	url = https://github.com/bids-dandisets/000876
+[submodule "000888"]
+	path = 000888
+	url = https://github.com/bids-dandisets/000888
+[submodule "000889"]
+	path = 000889
+	url = https://github.com/bids-dandisets/000889
+[submodule "000891"]
+	path = 000891
+	url = https://github.com/bids-dandisets/000891
+[submodule "000894"]
+	path = 000894
+	url = https://github.com/bids-dandisets/000894
+[submodule "000897"]
+	path = 000897
+	url = https://github.com/bids-dandisets/000897
+[submodule "000931"]
+	path = 000931
+	url = https://github.com/bids-dandisets/000931
+[submodule "000932"]
+	path = 000932
+	url = https://github.com/bids-dandisets/000932
+[submodule "000933"]
+	path = 000933
+	url = https://github.com/bids-dandisets/000933
+[submodule "000934"]
+	path = 000934
+	url = https://github.com/bids-dandisets/000934
+[submodule "000935"]
+	path = 000935
+	url = https://github.com/bids-dandisets/000935
+[submodule "000938"]
+	path = 000938
+	url = https://github.com/bids-dandisets/000938
+[submodule "000939"]
+	path = 000939
+	url = https://github.com/bids-dandisets/000939
+[submodule "000940"]
+	path = 000940
+	url = https://github.com/bids-dandisets/000940
+[submodule "000941"]
+	path = 000941
+	url = https://github.com/bids-dandisets/000941
+[submodule "000943"]
+	path = 000943
+	url = https://github.com/bids-dandisets/000943
+[submodule "000945"]
+	path = 000945
+	url = https://github.com/bids-dandisets/000945
+[submodule "000946"]
+	path = 000946
+	url = https://github.com/bids-dandisets/000946
+[submodule "000947"]
+	path = 000947
+	url = https://github.com/bids-dandisets/000947
+[submodule "000950"]
+	path = 000950
+	url = https://github.com/bids-dandisets/000950
+[submodule "000951"]
+	path = 000951
+	url = https://github.com/bids-dandisets/000951
+[submodule "000952"]
+	path = 000952
+	url = https://github.com/bids-dandisets/000952
+[submodule "000953"]
+	path = 000953
+	url = https://github.com/bids-dandisets/000953
+[submodule "000954"]
+	path = 000954
+	url = https://github.com/bids-dandisets/000954
+[submodule "000955"]
+	path = 000955
+	url = https://github.com/bids-dandisets/000955
+[submodule "000957"]
+	path = 000957
+	url = https://github.com/bids-dandisets/000957
+[submodule "000970"]
+	path = 000970
+	url = https://github.com/bids-dandisets/000970
+[submodule "000971"]
+	path = 000971
+	url = https://github.com/bids-dandisets/000971
+[submodule "000978"]
+	path = 000978
+	url = https://github.com/bids-dandisets/000978
+[submodule "000981"]
+	path = 000981
+	url = https://github.com/bids-dandisets/000981
+[submodule "000983"]
+	path = 000983
+	url = https://github.com/bids-dandisets/000983
+[submodule "000986"]
+	path = 000986
+	url = https://github.com/bids-dandisets/000986
+[submodule "000987"]
+	path = 000987
+	url = https://github.com/bids-dandisets/000987
+[submodule "000988"]
+	path = 000988
+	url = https://github.com/bids-dandisets/000988
+[submodule "000989"]
+	path = 000989
+	url = https://github.com/bids-dandisets/000989
+[submodule "001025"]
+	path = 001025
+	url = https://github.com/bids-dandisets/001025
+[submodule "001027"]
+	path = 001027
+	url = https://github.com/bids-dandisets/001027
+[submodule "001028"]
+	path = 001028
+	url = https://github.com/bids-dandisets/001028
+[submodule "001029"]
+	path = 001029
+	url = https://github.com/bids-dandisets/001029
+[submodule "001030"]
+	path = 001030
+	url = https://github.com/bids-dandisets/001030
+[submodule "001031"]
+	path = 001031
+	url = https://github.com/bids-dandisets/001031
+[submodule "001032"]
+	path = 001032
+	url = https://github.com/bids-dandisets/001032
+[submodule "001033"]
+	path = 001033
+	url = https://github.com/bids-dandisets/001033
+[submodule "001034"]
+	path = 001034
+	url = https://github.com/bids-dandisets/001034
+[submodule "001035"]
+	path = 001035
+	url = https://github.com/bids-dandisets/001035
+[submodule "001037"]
+	path = 001037
+	url = https://github.com/bids-dandisets/001037
+[submodule "001038"]
+	path = 001038
+	url = https://github.com/bids-dandisets/001038
+[submodule "001044"]
+	path = 001044
+	url = https://github.com/bids-dandisets/001044
+[submodule "001045"]
+	path = 001045
+	url = https://github.com/bids-dandisets/001045
+[submodule "001046"]
+	path = 001046
+	url = https://github.com/bids-dandisets/001046
+[submodule "001047"]
+	path = 001047
+	url = https://github.com/bids-dandisets/001047
+[submodule "001048"]
+	path = 001048
+	url = https://github.com/bids-dandisets/001048
+[submodule "001051"]
+	path = 001051
+	url = https://github.com/bids-dandisets/001051
+[submodule "001052"]
+	path = 001052
+	url = https://github.com/bids-dandisets/001052
