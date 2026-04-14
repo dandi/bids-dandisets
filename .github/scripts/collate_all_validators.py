@@ -56,83 +56,101 @@ async def list_repos(
     return repos
 
 
+async def _fetch_url(
+    session: aiohttp.ClientSession,
+    url: str,
+) -> aiohttp.ClientResponse | None:
+    """Fetch *url* with retries on throttling / transient errors.
+
+    Returns the response on success or 404 (caller checks status),
+    or None if all retries are exhausted.
+    """
+    backoff = INITIAL_BACKOFF
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            resp = await session.get(url)
+            if resp.status == 404:
+                return resp
+            if resp.status == 429 or resp.status >= 500:
+                retry_after = resp.headers.get("Retry-After")
+                wait = float(retry_after) if retry_after else backoff
+                logger.warning(
+                    "%s: HTTP %d, retry %d/%d in %.1fs",
+                    url, resp.status, attempt, MAX_RETRIES, wait,
+                )
+                resp.release()
+                await asyncio.sleep(wait)
+                backoff *= 2
+                continue
+            resp.raise_for_status()
+            return resp
+        except (aiohttp.ClientError, asyncio.TimeoutError) as exc:
+            if attempt < MAX_RETRIES:
+                logger.warning(
+                    "%s: %s, retry %d/%d in %.1fs",
+                    url, exc, attempt, MAX_RETRIES, backoff,
+                )
+                await asyncio.sleep(backoff)
+                backoff *= 2
+                continue
+            logger.error("%s: failed after %d attempts: %s", url, MAX_RETRIES, exc)
+            return None
+    # exhausted retries on 429/5xx
+    logger.error("%s: gave up after %d retries", url, MAX_RETRIES)
+    return None
+
+
 async def fetch_validation(
     session: aiohttp.ClientSession,
     sem: asyncio.Semaphore,
     org_url: str,
     repo_name: str,
-    branch: str,
+    branches: list[str],
     json_path: str,
 ) -> list[dict] | None:
-    """Fetch validation JSON for one repo; return annotated issues or None."""
+    """Try each branch in order; return annotated issues from the first hit."""
     org_name = org_url.rstrip("/").rsplit("/", 1)[-1]
-    url = (
-        f"https://raw.githubusercontent.com/{org_name}/{repo_name}"
-        f"/refs/heads/{branch}/{json_path}"
-    )
-    backoff = INITIAL_BACKOFF
     async with sem:
-        for attempt in range(1, MAX_RETRIES + 1):
-            try:
-                async with session.get(url) as resp:
-                    if resp.status == 404:
-                        logger.info(
-                            "%s/%s: no %s on branch %s",
-                            org_name, repo_name, json_path, branch,
-                        )
-                        return None
-                    if resp.status == 429 or resp.status >= 500:
-                        retry_after = resp.headers.get("Retry-After")
-                        wait = float(retry_after) if retry_after else backoff
-                        logger.warning(
-                            "%s/%s: HTTP %d, retry %d/%d in %.1fs",
-                            org_name, repo_name, resp.status,
-                            attempt, MAX_RETRIES, wait,
-                        )
-                        await asyncio.sleep(wait)
-                        backoff *= 2
-                        continue
-                    resp.raise_for_status()
-                    data = await resp.json(content_type=None)
-            except (aiohttp.ClientError, asyncio.TimeoutError) as exc:
-                if attempt < MAX_RETRIES:
-                    logger.warning(
-                        "%s/%s: %s, retry %d/%d in %.1fs",
-                        org_name, repo_name, exc,
-                        attempt, MAX_RETRIES, backoff,
-                    )
-                    await asyncio.sleep(backoff)
-                    backoff *= 2
-                    continue
-                logger.error(
-                    "%s/%s: failed after %d attempts: %s",
-                    org_name, repo_name, MAX_RETRIES, exc,
-                )
-                return None
-            else:
-                break
-        else:
-            # exhausted retries on 429/5xx
-            logger.error(
-                "%s/%s: gave up after %d retries",
-                org_name, repo_name, MAX_RETRIES,
+        for branch in branches:
+            url = (
+                f"https://raw.githubusercontent.com/{org_name}/{repo_name}"
+                f"/refs/heads/{branch}/{json_path}"
             )
-            return None
+            resp = await _fetch_url(session, url)
+            if resp is None:
+                # hard failure (retries exhausted) – skip this repo
+                return None
+            if resp.status == 404:
+                resp.release()
+                logger.debug(
+                    "%s/%s: no %s on branch %s",
+                    org_name, repo_name, json_path, branch,
+                )
+                continue
+            # success
+            data = await resp.json(content_type=None)
+            resp.release()
+            issues = data.get("issues", {}).get("issues", [])
+            for issue in issues:
+                issue["dandiset"] = repo_name
+                issue["branch"] = branch
+            logger.info(
+                "%s/%s: %d issues (branch %s)",
+                org_name, repo_name, len(issues), branch,
+            )
+            return issues
 
-    issues = data.get("issues", {}).get("issues", [])
-    for issue in issues:
-        issue["dandiset"] = repo_name
-        issue["branch"] = branch
     logger.info(
-        "%s/%s: %d issues", org_name, repo_name, len(issues),
+        "%s/%s: no %s on any of branches %s",
+        org_name, repo_name, json_path, ",".join(branches),
     )
-    return issues
+    return None
 
 
 async def collate(
     org_url: str,
     repo_regex: str,
-    branch: str,
+    branches: list[str],
     json_path: str,
     jobs: int,
 ) -> None:
@@ -151,10 +169,14 @@ async def collate(
 
         sem = asyncio.Semaphore(jobs)
         tasks = [
-            fetch_validation(session, sem, org_url, repo, branch, json_path)
+            fetch_validation(session, sem, org_url, repo, branches, json_path)
             for repo in repos
         ]
         results = await asyncio.gather(*tasks)
+
+    # Allow aiohttp SSL transports to close cleanly, avoiding a hang
+    # during event-loop shutdown.
+    await asyncio.sleep(0.25)
 
     total = 0
     for issues in results:
@@ -182,9 +204,9 @@ def main() -> None:
         help="Regex to match repo names (default: %(default)s)",
     )
     parser.add_argument(
-        "--branch",
-        default="curation",
-        help="Branch to fetch from (default: %(default)s)",
+        "--branches",
+        default="curation,basic_sanitization",
+        help="Comma-separated branches to try in order (default: %(default)s)",
     )
     parser.add_argument(
         "--json-path",
@@ -215,7 +237,7 @@ def main() -> None:
         collate(
             org_url=args.org,
             repo_regex=args.repo_regex,
-            branch=args.branch,
+            branches=[b.strip() for b in args.branches.split(",")],
             json_path=args.json_path,
             jobs=args.jobs,
         )
