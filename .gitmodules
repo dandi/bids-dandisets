@@ -2293,6 +2293,9 @@
 [submodule "001695"]
 	path = 001695
 	url = https://github.com/bids-dandisets/001695
+[submodule "001697"]
+	path = 001697
+	url = https://github.com/bids-dandisets/001697
 [submodule "001700"]
 	path = 001700
 	url = https://github.com/bids-dandisets/001700
@@ -2344,3 +2347,21 @@
 [submodule "001767"]
 	path = 001767
 	url = https://github.com/bids-dandisets/001767
+[submodule "001768"]
+	path = 001768
+	url = https://github.com/bids-dandisets/001768
+[submodule "001771"]
+	path = 001771
+	url = https://github.com/bids-dandisets/001771
+[submodule "001775"]
+	path = 001775
+	url = https://github.com/bids-dandisets/001775
+[submodule "001776"]
+	path = 001776
+	url = https://github.com/bids-dandisets/001776
+[submodule "001777"]
+	path = 001777
+	url = https://github.com/bids-dandisets/001777
+[submodule "001784"]
+	path = 001784
+	url = https://github.com/bids-dandisets/001784
