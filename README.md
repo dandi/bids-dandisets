@@ -26,10 +26,3 @@ git clone https://github.com/dandi/bids-dandisets
 cd bids-dandisets
 git submodule update --init 000/000003
 ```
-
-## Logo
-
-The BIDS-Dandisets logo comes from [dandi/artwork](https://github.com/dandi/artwork) and is licensed under
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). It combines the DANDI logo (© 2018 Kitware, CC BY 3.0),
-the [DataLad](https://www.datalad.org) logo, and the
-[BIDS logo](https://github.com/bids-standard/bids-specification/tree/master/BIDS_logo) (CC BY 4.0).
