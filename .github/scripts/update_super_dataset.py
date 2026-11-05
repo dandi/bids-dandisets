@@ -52,21 +52,24 @@ def run(limit: int | None = None) -> None:
 
             continue
 
-        submodule_path = repo_directory / dandiset_id
+        # Group submodules by the first three digits of the ID (e.g., 000/000003, 001/001234)
+        # to keep the top level of the super-dataset uncluttered
+        # The submodule name stays the bare ID, so its git directory is .git/modules/<dandiset_id>
+        submodule_relative_path = f"{dandiset_id[:3]}/{dandiset_id}"
+        submodule_add_command = (
+            f"git submodule add --name {dandiset_id} "
+            f"https://github.com/bids-dandisets/{dandiset_id} {submodule_relative_path}"
+        )
+
+        submodule_path = repo_directory / submodule_relative_path
         if not submodule_path.exists():
-            _deploy_subprocess(
-                command=f"git submodule add https://github.com/bids-dandisets/{dandiset_id} {dandiset_id}",
-                cwd=repo_directory,
-            )
+            _deploy_subprocess(command=submodule_add_command, cwd=repo_directory)
             print(f"\tCreated fresh submodule for Dandiset {dandiset_id}...")
         else:
-            _deploy_subprocess(command=f"git submodule deinit -f {dandiset_id}", cwd=repo_directory)
-            _deploy_subprocess(command=f"git rm -f {dandiset_id}", cwd=repo_directory)
+            _deploy_subprocess(command=f"git submodule deinit -f {submodule_relative_path}", cwd=repo_directory)
+            _deploy_subprocess(command=f"git rm -f {submodule_relative_path}", cwd=repo_directory)
             _deploy_subprocess(command=f"rm -rf .git/modules/{dandiset_id}", cwd=repo_directory)
-            _deploy_subprocess(
-                command=f"git submodule add https://github.com/bids-dandisets/{dandiset_id} {dandiset_id}",
-                cwd=repo_directory,
-            )
+            _deploy_subprocess(command=submodule_add_command, cwd=repo_directory)
             
             print(f"\tUpdated submodule for Dandiset {dandiset_id}...")
 
